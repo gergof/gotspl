@@ -104,7 +104,7 @@ func (c *EthernetTSPLClient) dataReader() {
 }
 
 func (c *EthernetTSPLClient) SendCommandSequence(commandSequence TSPLCommandSequence) error {
-	seq, err := commandSequence.getTSPLCode()
+	seq, err := commandSequence.GetTSPLCode()
 	if err != nil {
 		return err
 	}
